@@ -42,13 +42,15 @@
 }
 
 .App {
-  display: flexbox;
+  display: flex; /* Change flexbox to flex */
+  flex-direction: column; /* Align items in a column */
   justify-content: center; 
   align-items: center;
   background-image: url('/src/assets/img/background.jpg'); 
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
+  padding: 10px;
 }
 
 
@@ -78,6 +80,7 @@
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* For 3D effect */
+  overflow: hidden;
 }
 
 /* This container is needed to position the front and back side */
@@ -106,18 +109,19 @@
 
 /* Style the front side */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 10px;
+  flex-direction: column;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: rgb(255, 236, 143);
+  color: black;
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
@@ -137,6 +141,16 @@ button{
   cursor: pointer;
   margin-top: 10px;
 }
+
+.flashcard-img {
+  width: 30%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image */
+  border-radius: 8px; /* Optional: round the corners */
+  margin-bottom: 19px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 900px) {
