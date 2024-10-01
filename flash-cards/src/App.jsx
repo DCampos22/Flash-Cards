@@ -4,9 +4,9 @@ import './App.css';
 const App = () => {
   // Flashcards data: array of objects with question and answer pairs
   const flashcards = [
-    { question: "Who's that Pokémon?", img:'/src/assets/img/pikachu.jpeg', answer: "Pikachu" },
-    { question: "Who's that Pokémon?", img:'/src/assets/img/charmander.jpg', answer: "Charmander" },
-    { question: "Who's that Pokémon?", img:'/src/assets/img/bulbasaur.png', answer: "Bulbasaur" },
+    { question: "Who's that Pokémon?", img:'/src/assets/img/pikachu.jpeg', answer: "Pikachu", color: "green"},
+    { question: "Who's that Pokémon?", img:'/src/assets/img/charmander.jpg', answer: "Charmander", color: "yellow"},
+    { question: "Who's that Pokémon?", img:'/src/assets/img/bulbasaur.png', answer: "Bulbasaur", color: "red"},
   ];
 
   // State to track which flashcard is shown and whether to show the question or answer
@@ -29,7 +29,7 @@ const App = () => {
       <h5>Number of Pokémon: {flashcards.length}</h5>
 
       {/* Flashcard display */}
-      <div className="flip-card" onClick={toggleCard}>
+      <div className={`flip-card ${flashcards[currentIndex].color}`} onClick={toggleCard}>
         <div className={`flip-card-inner ${showAnswer ? 'flipped' : ''}`}>
           <div className="flip-card-front">
             <h1>{flashcards[currentIndex].question}</h1>
