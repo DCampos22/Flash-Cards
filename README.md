@@ -2,7 +2,7 @@
 
 Submitted by: **Damaris Campos**
 
-This web app: **insert description**
+This web app: **This web app is a flashcard game that challenges users to identify Pokémon based on a question prompt. It displays a card with a question and an accompanying image, allowing users to toggle between the question and the answer. The app includes navigation for users to cycle through different Pokémon flashcards, with features for categorizing difficulty visually. The user interface is designed to be engaging and interactive, making it an enjoyable learning tool for Pokémon enthusiasts.**
 
 Time spent: **4** hours spent in total
 
@@ -19,7 +19,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
+- [x] Cards have different visual styles such as color based on their category
 - [x] *visual style implemented*
 <!--
 The following **additional** features are implemented:
@@ -37,7 +37,7 @@ GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+While building the app, I faced challenges with the layout and styling of the flashcards, particularly ensuring the image was positioned correctly beneath the question without overflowing. Additionally, managing state for the current index and toggling the answer visibility required careful tracking to ensure a smooth user experience. Implementing the dynamic styling based on difficulty categories also posed challenges, as it necessitated coordination between the data structure and the visual representation.
 
 ## License
 
