@@ -1,24 +1,24 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - *Guess That Pokémon*
 
-Submitted by: **Your Name Here**
+Submitted by: **Damaris**
 
-This web app: **insert description**
+This web app: **Allows users to guess the names of Pokémon based on an image displayed on a flashcard. Users can navigate between cards, submit their guesses, and receive feedback on whether their guesses are correct.**
 
-Time spent: **X** hours spent in total
+Time spent: **4-6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The user can enter their guess in a box before seeing the flipside of the card**
-- [ ] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
-- [ ] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
-- [ ] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
 - [ ] A shuffle button is used to randomize the order of the cards
-- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [x] A user's answer may be counted as correct even when it is slightly different from the target answer (e.g., accepting the first 4 letters of the Pokémon name)
 - [ ] A counter displays the user's current and longest streak of correct responses
 - [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
@@ -34,18 +34,16 @@ Here's a walkthrough of implemented user stories:
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Some challenges encountered while building the app include managing state between the guess input and the flashcard navigation, and ensuring that partial matches for Pokémon names are accepted.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [Damaris]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
